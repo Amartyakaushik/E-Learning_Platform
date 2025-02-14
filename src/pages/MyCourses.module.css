@@ -1,0 +1,40 @@
+.myCoursesPage {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.myCourses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.courseCard {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.courseCard:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.watchNowBtn {
+  background-color: #ffd700;
+  color: #003366;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}

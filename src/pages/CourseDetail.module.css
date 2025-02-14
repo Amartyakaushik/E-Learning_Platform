@@ -1,0 +1,159 @@
+/* General container styling */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 40px;
+  background: linear-gradient(135deg, rgba(0, 140, 255, 0.6), rgba(0, 90, 160, 0.5)), url('../assets/coding.svg') no-repeat center center;
+  background-size: cover;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.headerContent {
+  max-width: 50%;
+  z-index: 2;
+}
+
+.courseName {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.headerButtonContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #ffb900;
+  color: #1f1f1f;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #d89700;
+  transform: scale(1.05);
+}
+
+.headerImg {
+  width: 45%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Curriculum Section */
+.curriculumSection {
+  padding: 60px 20px;
+  background-color: #f4f7f9;
+}
+
+.curriculumHeading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.module {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.chapterNumber {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffb900;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .headerContent {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .courseName {
+    font-size: 36px;
+  }
+
+  .headerImg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .curriculumSection {
+    padding: 40px 20px;
+  }
+
+  .curriculumHeading {
+    font-size: 28px;
+  }
+
+  .module {
+    padding: 20px;
+  }
+}

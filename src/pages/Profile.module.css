@@ -1,0 +1,79 @@
+/* Profile container */
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  
+  .profileCard {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .profileHeader {
+    margin-bottom: 30px;
+  }
+  
+  .profilePic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+  
+  .profileName {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .profileDetails {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .profileDetails p {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .editButton {
+    background-color: #ffb900;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .editButton:hover {
+    background-color: #d89700;
+  }
+  
+  /* Error and loading states */
+  .loading,
+  .error {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
